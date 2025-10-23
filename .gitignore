@@ -1,0 +1,92 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# 数据和输出
+data/outputs/
+data/content/*.jpg
+data/content/*.jpeg
+data/content/*.png
+data/content/*.bmp
+data/content/*.webp
+data/style/*.jpg
+data/style/*.jpeg
+data/style/*.png
+data/style/*.bmp
+data/style/*.webp
+
+# 保留README文件
+!data/content/README.md
+!data/style/README.md
+!data/ORGANIZATION_GUIDE.md
+
+output/
+results/
+batch_output/
+batch_results/
+comparison/
+*.jpg
+*.png
+*.gif
+*.mp4
+
+# 例外：保留README中的示例图片
+!examples/*.jpg
+!examples/*.png
+
+# 模型文件
+*.pth
+*.pt
+*.onnx
+
+# 数据集
+wikiart/data/*.parquet
+wikiart/data/*.csv
+
+# 日志
+*.log
+logs/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,28 @@
+# 神经风格迁移项目依赖
+
+# PyTorch核心库
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Web GUI界面
+gradio>=4.0.0
+
+# 图像处理
+Pillow>=9.0.0
+
+# 数据处理
+pandas>=1.5.0
+pyarrow>=10.0.0
+numpy>=1.23.0
+
+# 可视化
+matplotlib>=3.5.0
+
+# 可选：进度条
+tqdm>=4.65.0
+
+# 可选：视频/GIF 支持、数据下载
+imageio>=2.25.0
+imageio-ffmpeg>=0.4.8
+huggingface_hub>=0.15.0
+requests>=2.28.0
