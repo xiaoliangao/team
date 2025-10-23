@@ -370,9 +370,10 @@ class VideoStyleTransfer:
         # 使用 H.264 编码器，兼容性更好
         # 尝试多个编码器以确保兼容性
         codecs = [
-            ('mp4v', '.mp4'),  # MPEG-4 (macOS兼容性更好)
-            ('avc1', '.mp4'),  # H.264
-            ('XVID', '.avi'),  # Xvid
+            ('avc1', '.mp4'),  # H.264 (优先使用)
+            ('H264', '.mp4'),  # H.264 替代方案
+            ('X264', '.mp4'),  # X264
+            ('mp4v', '.mp4'),  # MPEG-4 (备用方案)
         ]
         
         success = False
