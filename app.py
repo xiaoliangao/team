@@ -1172,12 +1172,10 @@ def create_interface():
 
 if __name__ == "__main__":
     interface = create_interface()
-    # show_api=False 隐藏API文档链接
-    # show_error=True 显示错误信息用于调试
     interface.launch(
         share=False, 
         server_name="0.0.0.0", 
         server_port=7861, 
         show_error=True,
-        show_api=False  # 隐藏 "通过API使用" 链接
+        show_api=False  
     )
