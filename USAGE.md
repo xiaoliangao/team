@@ -56,7 +56,7 @@ python app.py
 
 ### 图像风格迁移
 
-#### 基本命令
+#### 基本命令示例
 
 ```bash
 # 使用本地图片
@@ -72,6 +72,34 @@ python train.py --content photo.jpg --artist "Vincent van Gogh"
 python train.py --content photo.jpg --style art.jpg --steps 500 --size 1024
 ```
 
+### 主要参数
+
+#### 图像处理参数
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--content` | 内容图片路径 | 必需 |
+| `--style` | 风格图片路径 | None |
+| `--style-name` | WikiArt风格名称 | None |
+| `--steps` | 迭代步数 | 300 |
+| `--style-weight` | 风格权重 | 1e6 |
+| `--size` | 图像尺寸 | 512 |
+| `--output` | 输出目录 | output |
+
+### 图片库管理
+
+```bash
+# 查看
+python manage_styles.py list                    # 风格图片
+python manage_styles.py list-content            # 内容图片
+
+# 添加
+python manage_styles.py add artwork.jpg
+python manage_styles.py add-content photo.jpg
+
+# 删除
+python manage_styles.py remove old_style.jpg
+```
 ### 视频风格迁移
 
 #### 基本命令
@@ -152,35 +180,6 @@ data/outputs/styled_{视频名}_{风格名}_{时间戳}.mp4
 例如：
 ```
 data/outputs/styled_my_video_starry_night_20251023_143052.mp4
-```
-
-### 主要参数
-
-#### 图像处理参数
-
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| `--content` | 内容图片路径 | 必需 |
-| `--style` | 风格图片路径 | None |
-| `--style-name` | WikiArt风格名称 | None |
-| `--steps` | 迭代步数 | 300 |
-| `--style-weight` | 风格权重 | 1e6 |
-| `--size` | 图像尺寸 | 512 |
-| `--output` | 输出目录 | output |
-
-### 图片库管理
-
-```bash
-# 查看
-python manage_styles.py list                    # 风格图片
-python manage_styles.py list-content            # 内容图片
-
-# 添加
-python manage_styles.py add artwork.jpg
-python manage_styles.py add-content photo.jpg
-
-# 删除
-python manage_styles.py remove old_style.jpg
 ```
 
 ---
@@ -405,5 +404,3 @@ project/
 ```
 
 ---
-
-**享受创作！** 🎨

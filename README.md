@@ -190,8 +190,6 @@ A: 支持断点续传。重新运行相同命令，会自动从中断处继续�
 ## 📚 文档
 
 - **使用指南**: [USAGE.md](USAGE.md) - 详细使用说明和参数调优
-- **图片库管理**: [data/ORGANIZATION_GUIDE.md](data/ORGANIZATION_GUIDE.md) - 图片库组织建议
+- **项目介绍**: [README.md](README.md)
 
 ---
-
-**享受艺术创作！** 🎨

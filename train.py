@@ -23,7 +23,7 @@ def parse_args():
                        help='内容图片路径')
     parser.add_argument('--style', type=str, default=None,
                        help='风格图片路径（如果不指定，从数据集随机选择）')
-    parser.add_argument('--output', type=str, default='output',
+    parser.add_argument('--output', type=str, default='data/outputs',
                        help='输出目录')
     
     # 数据集相关
