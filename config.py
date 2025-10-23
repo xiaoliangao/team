@@ -97,6 +97,37 @@ class Config:
     # 视频配置
     VIDEO_FPS = 10
     
+    # ==================== 风格推荐配置 ====================
+    # 推荐系统特征提取模型
+    RECOMMENDATION_MODEL = 'resnet50'
+    
+    # 推荐数量范围
+    MIN_RECOMMENDATIONS = 3
+    MAX_RECOMMENDATIONS = 10
+    DEFAULT_RECOMMENDATIONS = 5
+    
+    # 色彩特征权重
+    HUE_WEIGHT = 0.3
+    SATURATION_WEIGHT = 0.25
+    BRIGHTNESS_WEIGHT = 0.25
+    DIVERSITY_WEIGHT = 0.2
+    
+    # ==================== 视频处理配置 ====================
+    # 视频处理默认参数
+    VIDEO_DEFAULT_STEPS = 150
+    VIDEO_DEFAULT_SIZE = 256
+    VIDEO_MAX_FRAMES_DEFAULT = 0  # 0表示处理全部
+    
+    # 时间一致性权重
+    TEMPORAL_WEIGHT = 1e4
+    
+    # 检查点保存间隔（帧数）
+    CHECKPOINT_INTERVAL = 10
+    
+    # 视频输出格式
+    VIDEO_CODEC = 'mp4v'
+    VIDEO_EXTENSION = '.mp4'
+    
     # ==================== 实验配置 ====================
     # 风格权重实验范围
     STYLE_WEIGHT_RANGE = [1e5, 5e5, 1e6, 5e6, 1e7]

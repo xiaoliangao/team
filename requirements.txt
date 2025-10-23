@@ -18,11 +18,15 @@ numpy>=1.23.0
 # 可视化
 matplotlib>=3.5.0
 
-# 可选：进度条
+# 进度条
 tqdm>=4.65.0
 
-# 可选：视频/GIF 支持、数据下载
+# 视频处理（新增）
+opencv-python>=4.8.0
 imageio>=2.25.0
 imageio-ffmpeg>=0.4.8
+
+# 数据下载（可选）
 huggingface_hub>=0.15.0
 requests>=2.28.0
+
