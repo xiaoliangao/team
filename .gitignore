@@ -60,7 +60,7 @@ batch_output/
 batch_results/
 comparison/
 *.jpg
-*.png
+
 *.gif
 *.mp4
 
